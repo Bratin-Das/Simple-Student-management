@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Simple Student Portal</title>
+<link rel="stylesheet" type="text/css"
+	href="./assets/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="alert alert-primary">
+		<div class="container">
+			<h1>Simple Student Portal</h1>
+		</div>
+	</div>
+	<div class="container" style="min-height: 400px">
+
+		<p>
+			<a href="./" class="btn btn-link">Home</a> 
+			<a href="./add-student"class="btn btn-link">Add Students</a> 
+			<a href="./search-id"class="btn btn-link">Search Student by id</a>
+		</p>
+		
+		<div class="row" >
+				<div class="col">
+								<div class="form-group row">
+					
+			
+		
+		 <h2>Add New Student</h2>
+ 	    <form action="save-student" method="post">
+        <label class="col-md-4" cssClass = "form-control">First Name: </label>
+        <input type="text" name="fname"  required class = "form-control"><br>
+        <label class="col-md-4">Last Name: </label>
+        <input type="text" name="lname" required class = "form-control"><br>
+        <label class="col-md-4">Date of Birth (dob): </label>
+        <input type="text" name="dob" required class = "form-control"><br>
+        <label class="col-md-4">Parent's Name: </label>
+        <input type="text" name="parentname" required class = "form-control"><br>
+        <label class="col-md-4">Address: </label>
+        <input type="text" name="address" required class = "form-control"><br>
+        <label class="col-md-4">City: </label>
+        <input type="text" name="city" required class = "form-control"><br>
+        <label class="col-md-4">Phone Number: </label>
+        <input type="tel" name="phone" required class = "form-control"><br>
+       <div class="form-group row">
+				<label class="col-md-4"></label>
+				<div class="col-md-8">
+					<button class="btn btn-primary">Submit changes</button>
+				</div>
+			</div>
+    </form>
+    				</div>
+    		</div>
+    </div>
+		
+		
+	</div>
+	<div class="container text-center">
+		&copy; 2022-2023 All rights reserved by <a
+			href="https://bratin-das.github.io/BratinDas-Portfolio.github.io/">DBratin
+			Inc</a>
+	</div>
+</body>
+</html>

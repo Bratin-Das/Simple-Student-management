@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Simple Student Portal</title>
+<link rel="stylesheet" type="text/css"
+	href="./assets/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="alert alert-primary">
+		<div class="container">
+			<h1>Simple Student Portal</h1>
+		</div>
+	</div>
+	<div class="container" style="min-height: 400px">
+
+		<p>
+			<a href="./" class="btn btn-link">Home</a> 
+			<a href="./add-student"class="btn btn-link">Add Students</a> 
+			<a href="./by-id" class="btn btn-link">Search Student by id</a>
+		</p>
+	</div>
+	<h2>Student Details for id :: ${param.id}</h2>
+	
+	
+	  <a href="./edit-student?id= ${stud.id}" class="btn btn-primary">Edit</a>
+<div class = "row">
+
+	<div class="col">
+		<table class="table">
+			<tbody>
+				<tr>
+					<td>Name</td>
+					<td>${stud.name}</td>
+				</tr>
+				<tr>
+					<td>Last Name</td>
+					<td>${stud.lastName}</td>
+				</tr>
+				<tr>
+					<td>DOB(Date of Birth)</td>
+					<td>${stud.dob}</td>
+				</tr>
+				<tr>
+					<td>Parent Name</td>
+					<td>${stud.parentName}</td>
+				</tr>
+				<tr> 
+					<td>Address</td>
+					<td>${stud.address}</td>
+				</tr>
+				<tr>
+					<td>City</td>
+					<td>${stud.city}</td>
+				</tr>
+				<tr>
+					<td>Phone</td>
+					<td>${stud.phoneNumber}</td>
+				</tr>
+			
+			</tbody>
+		</table>
+	</div>
+	
+	<div class="col"></div>
+
+</div>
+	
+	
+	<div class="container text-center">
+		&copy; 2022-2023 All rights reserved by <a
+			href="https://bratin-das.github.io/BratinDas-Portfolio.github.io/">DBratin
+			Inc</a>
+	</div>
+</body>
+</html>

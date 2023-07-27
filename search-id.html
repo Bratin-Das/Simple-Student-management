@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Simple Student Portal</title>
+<link rel="stylesheet" type="text/css"
+	href="./assets/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="alert alert-primary">
+		<div class="container">
+			<h1>Simple Student Portal</h1>
+		</div>
+	</div>
+	<div class="container" style="min-height: 400px">
+
+		<p>
+			<a href="./" class="btn btn-link">Home</a> <a href="./add-student"
+				class="btn btn-link">Add Students</a> <a href="./search-id"
+				class="btn btn-link">Search Student by id</a>
+		</p>
+
+
+		<h2>Search By Student ID:</h2>
+
+		<div class="row form-group">
+			<div class="col">
+				<form action="search-by-id" method="GET">
+
+					<div class="row form-group">
+						<label class="col-md-4" for="min">Enter Student ID</label>
+						<div class="col-md-8">
+							<input type="text" id="id" name="id" class="form-control">
+						</div>
+					</div>
+					
+					<button class="btn btn-primary">Submit</button>
+				</form>
+			</div>
+
+
+
+		</div>
+		<div class="container text-center">
+			&copy; 2022-2023 All rights reserved by <a
+				href="https://bratin-das.github.io/BratinDas-Portfolio.github.io/">DBratin
+				Inc</a>
+		</div>
+</body>
+</html>
